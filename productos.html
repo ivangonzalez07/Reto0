@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+
+<meta charset="utf-8"/>
+
+<title>ivan gonzalez</title>
+</head>
+
+<body id="body">
+
+
+  <nav id="menu">
+      <ul>
+          <li><a href="index.php">ENTRADA</a></li>
+          <li><a href="produktuak.php">TEMPORADAS</a></li>
+          <li><a href="produktuak.php">ACTORER</a></li></li>
+          <li><a href="produktuak.php">MERCHAN</a></li></li>
+          <li><a href="produktuak.php">VIDEOS Y ENLACES</a></li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </nav>
+
+
+<h1 class="izenburua"> PRODUKTUAK </h1>
+
+<article>
+
+
+
+		<table id="taula">
+			<th>
+				Liburua
+			</th>
+			<th>
+				izena
+			</th>
+
+			 <?php while ($row=$result->fetch_assoc()) { //$row erantzun bat ematen badigu... ?>
+			<!-- taula batean produkten informazio guztia pantailaratuko dugu -->
+  			<tr>
+    			<td><?php echo "<a href='infoprod.php?id=".$row['Id']."'> <img src='./IRUDIAK/" . $row['Irudia'] . "' width='150'></img> </a>"; ?></td>
+    			<td><?php echo "<u>" . $row['Izena'] . "</u>" . "<br><br>" . $row['Azalpena'] . "<br>" . "<a href='infoprod.php?id=".$row['Id']."'>informazio gehiago</a>"; ?></td>
+  			</tr>
+
+			<!-- konexioa bukatzeko -->
+			<?php } $conn->close(); ?>
+		</table>
+
+</article>
+
+<div id="bukaera">
+<p> -Egilea: Ivan Gonzalez / Telegonoa: 943256487 / TWITTER= @inbentarioaivan / Eskerrikasko gure dendan erosteagatik!!  </p>
+</div>
+
+</body>
+</html>
