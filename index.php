@@ -6,7 +6,8 @@
 <meta charset="utf-8"/>
 
 <?php
-		$time = time();
+	date_default_timezone_set('Australia/Adelaide');
+	$time = time();
 ?>
 
 <title>VIKINGOS</title>
@@ -23,7 +24,11 @@
 	          <li><a href="actores.html">ACTORES</a></li></li>
 	          <li><a href="productos.html">MERCHANDISING</a></li>
 	          <li><a href="videos.html">VIDEOS Y ENLACES</a></li>
-						<li><?php echo (date("H:i:s", $time)); ?></li>
+						<li id="horaservidor"><?php
+							echo date("H:i:s", $time);
+							echo "<br>";
+							echo date("Y/m/d");
+						?></li>
 	      </ul>
 	 </nav>
 

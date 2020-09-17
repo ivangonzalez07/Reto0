@@ -173,3 +173,10 @@ a {
     margin: 30px;
     margin-top: 50px;
 }
+
+#horaservidor {
+	float: right;
+	color: white;
+	margin-left: 200px;
+	text-align: right;
+}
