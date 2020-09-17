@@ -31,7 +31,7 @@
 				Producto
 			</th>
 			<th>
-
+        Imagen
 			</th>
 			<th>
 				Precio
