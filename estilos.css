@@ -6,6 +6,7 @@
 	background-size: cover;
 }
 
+
 #menu ul {
     list-style-type: none;
     margin: 0;
@@ -43,12 +44,12 @@
 
 }
 h1.lehenengo {
-	
+
 		margin-left: 430px;
 		margin-right: 300px;
-	
+
 }
-	
+
 h2.izena{
 	color: #28EE0C;
 	text-align: left;
@@ -72,7 +73,7 @@ div#txt{
 	margin-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
-	
+
 }
 
 #taula td, #taula th {
@@ -91,7 +92,7 @@ div#txt{
     text-align: center;
     background-color: #AF33FF;
     color: white;
-	
+
 }
 
 article{
@@ -101,7 +102,7 @@ article{
 div#irudi{
 	margin-top:-300px;
 	margin-left:550px;
-	
+
 }
 div#bukaera{
 	color:white;
@@ -113,11 +114,11 @@ h1.izenburua{
 	text-align: center;
     text-shadow: 4px 4px 4px black;
     font-size: 350%;
-	
+
 }
 div#pcirudia{
 	text-align:left;
-	margin-top:25px;	
+	margin-top:25px;
 }
 div#atakak{
 	text-align:right;
@@ -135,9 +136,9 @@ div#atakak{
 	left:15%;
 	width:70%;
 	background-color:#3DB7B3;
-	color:#101066; 
+	color:#101066;
 	text-align:center;
-	
+
 }
 
 a {
