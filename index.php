@@ -5,6 +5,11 @@
 
 <meta charset="utf-8"/>
 
+<?php
+    date_default_timezone_set('Australia/Adelaide');
+    $time = time();
+?>
+
 <title>VIKINGOS</title>
 </head>
 
@@ -12,15 +17,20 @@
 <body id="body">
 
 
-	<nav id="menu">
-	      <ul>
-	          <li><a href="index.html">ENTRADA</a></li>
-	          <li><a href="temporadas.html">TEMPORADAS</a></li>
-	          <li><a href="actores.html">ACTORES</a></li></li>
-	          <li><a href="productos.html">MERCHANDISING</a></li>
-	          <li><a href="videos.html">VIDEOS Y ENLACES</a></li>
-	      </ul>
-	  </nav>
+    <nav id="menu">
+          <ul>
+              <li><a href="index.php">ENTRADA</a></li>
+              <li><a href="temporadas.php">TEMPORADAS</a></li>
+              <li><a href="actores.php">ACTORES</a></li></li>
+              <li><a href="productos.php">MERCHANDISING</a></li>
+              <li><a href="videos.php">VIDEOS Y ENLACES</a></li>
+                        <li id="horaservidor"><?php
+                            echo date("H:i:s", $time);
+                            echo "<br>";
+                            echo date("Y/m/d");
+                        ?></li>
+          </ul>
+     </nav>
 
 <h1 class="izenburua"> VIKINGOS </h1>
 
