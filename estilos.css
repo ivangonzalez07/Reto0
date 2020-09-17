@@ -1,5 +1,5 @@
 #body {
-	background-image: url(imagenes/v.jpg);
+	background-image: url(imagenes/imagenv.png);
 	background-size: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -149,4 +149,27 @@ a {
 #orgatxoa{
 
 	text-align: right;
+}
+
+#actores {
+	width: 200px;
+	height: 200px;
+}
+
+#actor{
+
+	float: left;
+    width: 230px;
+    height: 300px;
+    margin: 30px;
+
+}
+
+#actor1 {
+
+	float: left;
+    width: 230px;
+    height: 300px;
+    margin: 30px;
+    margin-top: 50px;
 }
