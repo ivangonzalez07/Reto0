@@ -5,69 +5,99 @@
 
 <meta charset="utf-8"/>
 
+<?php
+    date_default_timezone_set('Australia/Adelaide');
+    $time = time();
+?>
+
 <title>VIKINGOS</title>
 </head>
 
+
 <body id="body">
 
-  <nav id="menu">
-      <ul>
-          <li><a href="index.php">ENTRADA</a></li>
-          <li><a href="temporadas.php">TEMPORADAS</a></li>
-          <li><a href="actores.php">ACTORES</a></li></li>
-          <li><a href="productos.php">MERCHANDISING</a></li></li>
-          <li><a href="videos.php">VIDEOS Y ENLACES</a></li></li>
-          <li></li>
-          <li></li>
-      </ul>
-  </nav>
 
-  <h1 class="izenburua"> ACTORES </h1>
+    <nav id="menu">
+          <ul>
+              <li><a href="index.php">ENTRADA</a></li>
+              <li><a href="temporadas.php">TEMPORADAS</a></li>
+              <li><a href="actores.php">ACTORES</a></li></li>
+              <li><a href="productos.php">MERCHANDISING</a></li>
+              <li><a href="videos.php">VIDEOS Y ENLACES</a></li>
+                        <li id="horaservidor"><?php
+                            echo date("H:i:s", $time);
+                            echo "<br>";
+                            echo date("Y/m/d");
+                        ?></li>
+          </ul>
+     </nav>
 
-  <article id="actor">
-  	<img id="actores" src="ragnar.jpg">
-  	<p>Travis Fimmel es un actor de cine y televisión y modelo australiano.
+<h1 class="izenburua"> VIKINGOS </h1>
+
+<article>
+
+
+<table id="taula">
+	<th>
+		Nombre
+	</th>
+	<th>
+		Imagen
+	</th>
+	<th>
+		Descripcion
+	</th>
+<tr>
+    <td>Travis Fimmel</td>
+  	<td><img id="actores" src="imagenes/ragnar.jpg"></td>
+  	<td><p>Travis Fimmel es un actor de cine y televisión y modelo australiano.
 	Saltó a la fama al interpretar el papel protagonista de la serie Vikings (2013), interpretando al rey nórdico, legendario del siglo IX, Ragnar Lothbrok.
-	</p>
-  </article>
-
-  <article id="actor">
-  	<img id="actores" src="lagertha.jpg">
-  	<p>Katheryn Winnick ​ es una actriz y directora canadiense, más conocida por su rol de Lagertha en la serie Vikings.
-Ha aparecido en numerosas películas incluyendo Failure to Launch, Amusement, Love & Other Drugs y Killers.
-
+  </p></td>
+</tr>
+<tr>
+    <td>Katheryn Winnick</td>
+    <td><img id="actores" src="imagenes/lagertha.jpg"></td>
+  	<td><p>Katheryn Winnick ​ es una actriz y directora canadiense, más conocida por su rol de Lagertha en la serie Vikings.
+Ha aparecido en numerosas películas incluyendo Failure to Launch, Amusement, Love & Other Drugs y Killers.</p></td>
+</tr>
+<tr>
+    <td>Alexander Ludwig</td>
+  	<td><img id="actores" src="imagenes/bjorn.png"></td>
+  	<td><p>Alexander Ludwig es un actor, cantante y modelo canadiense. Reconocido por su rol protagonista como Björn Ironside en la serie de The History Channel Vikings. </p></td>
+</tr>
+<tr>
+    <td>Alex Høgh Andersen</td>
+  	<td><img id="actores" src="imagenes/ivar.jpg"></td>
+  	<td><p>Alex Høgh Andersen es un actor y fotógrafo danés. Es conocido principalmente por el papel de Ivar el Deshuesado en la serie de televisión de drama histórico canadiense-irlandesa, Vikings.</td>
 </p>
-  </article>
-
-  <article id="actor">
-  	<img id="actores" src="bjorn.png">
-  	<p>Alexander Ludwig es un actor, cantante y modelo canadiense. Reconocido por su rol protagonista como Björn Ironside en la serie de The History Channel Vikings. </p>
-  </article>
-
-  <article id="actor">
-  	<img id="actores" src="ivar.jpg">
-  	<p>Alex Høgh Andersen es un actor y fotógrafo danés. Es conocido principalmente por el papel de Ivar el Deshuesado en la serie de televisión de drama histórico canadiense-irlandesa, Vikings.
+</tr>
+<tr>
+    <td>Alyssa Sutherland</td>
+  	<td><img id="actores" src="imagenes/aslaug.jfif"></td>
+  	<td><p>Alyssa Sutherland (23 de septiembre de 1982 en Brisbane) es una modelo y actriz australiana conocida por su papel protagonista interpretando a Aslaug en la serie de televisión Vikings.</td>
 </p>
-  </article>
+</tr>
+<tr>
+  <td>Clive James Standen</td>
+  	<td><img id="actores" src="imagenes/rollo.jpg"></td>
+  	<td><p>Clive James Standen es un actor británico conocido por haber interpretado a Archer en Robin Hood, a Gawain en Camelot y actualmente por interpretar a Rollo en la serie Vikings.<br>
+Fue miembro del National Youth Theatre y el National Youth Music Theatre.
+</p></td>
+</tr>
+<tr>
+    <td>Gustaf Caspar Orm Skarsgård</td>
+  	<td><img id="actores" src="imagenes/floki.jpg"></td>
+  	<td><p>Gustaf Caspar Orm Skarsgård es un actor sueco conocido por su papel de Floki en la serie Vikingos.
+Es hijo del actor Stellan Skarsgård y My Skarsgård, una doctora. Tiene cinco hermanos: Eija, Sam, Valter, Bill y Alexander
+</p></td>
+</tr>
+</table>
 
+</article>
 
-  <article id="actor">
-  	<img id="actores" src="aslaug.jfif">
-  	<p>Alyssa Sutherland (23 de septiembre de 1982 en Brisbane) es una modelo y actriz australiana conocida por su papel protagonista interpretando a Aslaug en la serie de televisión Vikings.
-</p>
-  </article>
+<div id="bukaera">
+<p> Creadores de la pagina: Endika, jon e ivan, gracias por visitar nuestra pagina web  </p>
+</div>
 
-<article id="actor">
-  	<img id="actores" src="rollo.jpg">
-  	<p>Clive James Standen es un actor británico conocido por haber interpretado a Archer en Robin Hood, a Gawain en Camelot y actualmente por interpretar a Rollo en la serie Vikings.
-Fue miembro del National Youth Theatre y el National Youth Music Theatre. 
-</p>
-  </article>
-
-  <article id="actor">
-  	<img id="actores" src="floki.jpg">
-  	<p>Gustaf Caspar Orm Skarsgård es un actor sueco conocido por su papel de Floki en la serie Vikingos.
-Es hijo del actor Stellan Skarsgård y My Skarsgård, una doctora. Tiene cinco hermanos: Eija, Sam, Valter, Bill y Alexander 
-</p>
-  </article>
-  
+</body>
+</html>

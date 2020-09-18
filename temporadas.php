@@ -5,6 +5,11 @@
 
 <meta charset="utf-8"/>
 
+<?php
+    date_default_timezone_set('Australia/Adelaide');
+    $time = time();
+?>
+
 <title>VIKINGOS</title>
 </head>
 
@@ -12,32 +17,49 @@
 <body id="body">
 
 
-	<nav id="menu">
-	      <ul>
-	          <li><a href="index.html">ENTRADA</a></li>
-	          <li><a href="temporadas.html">TEMPORADAS</a></li>
-	          <li><a href="actores.html">ACTORES</a></li>
-	          <li><a href="productos.html">MERCHANDISING</a></li>
-	          <li><a href="videos.html">VIDEOS Y ENLACES</a></li>
-	      </ul>
-	  </nav>
+    <nav id="menu">
+          <ul>
+              <li><a href="index.php">ENTRADA</a></li>
+              <li><a href="temporadas.php">TEMPORADAS</a></li>
+              <li><a href="actores.php">ACTORES</a></li></li>
+              <li><a href="productos.php">MERCHANDISING</a></li>
+              <li><a href="videos.php">VIDEOS Y ENLACES</a></li>
+                        <li id="horaservidor"><?php
+                            echo date("H:i:s", $time);
+                            echo "<br>";
+                            echo date("Y/m/d");
+                        ?></li>
+          </ul>
+     </nav>
 
 <h1 class="izenburua"> VIKINGOS </h1>
 
 <article>
 
 		<table id="taula">
+        <th>
+      		Temporada
+      	</th>
+      	<th>
+      		Imagen
+      	</th>
+      	<th>
+      		Informacion
+      	</th>
   			<tr>
-    			<td><h2><u>Serie Vikingos</u></h2>
-    				<br>
-    				<br>
-    				<img src="./imagenes/vikin.jpg" alt="katalogo" width="500" />
-    				<br>
-    				<br>
-    				<p>Vikings es una serie de televisión de drama histórico creada y escrita por Michael Hirst.<br>Vikings está inspirada en las sagas del vikingo Ragnar Lodbrok, uno de los héroes nórdicos legendarios más conocidos y notorio como el flagelo de Inglaterra y Francia.
-							El programa retrata a Ragnar como un granjero que alcanza la fama con incursiones exitosas en Inglaterra, y finalmente se convierte en un rey escandinavo, con el apoyo de su familia y sus guerreros.</p>
-
-    			</td>
+    			<td>1</td>
+          <td>N.º de episodios : 9<br>
+              Primera emisión : 3 de marzo de 2013<br>
+              Última emisión : 28 de abril de 2013
+          </td>
+  			</tr>
+        <tr>
+    			<td>Temporada 2</td>
+          <td>askdhakjdhkashdkahdkakdhkashkjahkdhkaj</td>
+  			</tr>
+        <tr>
+    			<td>Temporada 3</td>
+          <td>askdhakjdhkashdkahdkakdhkashkjahkdhkaj</td>
   			</tr>
 
 		</table>
